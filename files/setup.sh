@@ -2,6 +2,8 @@
 chmod -R 777 /app/nemakiware
 chmod -R 777 /share
 
+git clone --branch dockerize https://github.com/aegif/nemakiware
+
 cd /app/nemakiware && mvn install
 cd /app/nemakiware/nemakiware/action && mvn install
 cd /app/nemakiware/common && mvn install
