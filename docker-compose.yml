@@ -8,7 +8,5 @@ services:
       - nemakiware.version=2.5
     volumes:
       - ./result:/share
-      - ./nemaki-setup-ui/repositories:/root/.sbt/repositories.txt
-      - ./../../../ui/activator-launch-1.2.10.jar:/root/.ivy2/local/com.typesafe.activator/activator-launcher/1.2.10/jars/activator-launcher.jar
     tty: true
     command: /home/scripts/setup.sh

@@ -18,6 +18,8 @@ RUN apk --update add git less openssh && \
 
 # COPY . /app
 COPY ./files/setup.sh /home/scripts/setup.sh
+COPY ./files/activator-launch-1.2.10.jar /root/.ivy2/local/com.typesafe.activator/activator-launcher/1.2.10/jars/activator-launcher.jar
+COPY ./files/repositories /root/.sbt/repositories.txt
 RUN chmod 777 /home/scripts/setup.sh
 
 RUN chmod 777 /app
